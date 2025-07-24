@@ -1,0 +1,8 @@
+2025-07-23 16:15:25.762976-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM ROOM\000d\000a\000d\000a[*]SELECT * FROM BOOKING"; SQL statement:
+SELECT * FROM ROOM
+
+SELECT * FROM BOOKING [42000-232]
+2025-07-24 15:18:44.684285-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOM_AVAILEBLE_DAYS" not found; SQL statement:
+SELECT * FROM ROOM_AVAILEBLE_DAYS [42102-232]
