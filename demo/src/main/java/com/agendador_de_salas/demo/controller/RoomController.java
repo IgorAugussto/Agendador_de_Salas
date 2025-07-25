@@ -36,6 +36,8 @@ public class RoomController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    //Verificar salas disponiveis
+
     // Atualizar sala
     @PutMapping("/{id}")
     public ResponseEntity<Room> updateRoom(@PathVariable Long id, @RequestBody Room updatedRoom) {

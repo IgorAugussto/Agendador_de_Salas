@@ -6,3 +6,6 @@ SELECT * FROM BOOKING [42000-232]
 2025-07-24 15:18:44.684285-03:00 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOM_AVAILEBLE_DAYS" not found; SQL statement:
 SELECT * FROM ROOM_AVAILEBLE_DAYS [42102-232]
+2025-07-24 16:31:21.735383-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOM_AVAILABLE_ROOM" not found; SQL statement:
+SELECT * FROM ROOM_AVAILABLE_ROOM [42102-232]
