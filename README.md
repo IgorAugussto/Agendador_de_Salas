@@ -60,7 +60,7 @@ Antes de rodar o projeto, verifique se você possui os seguintes requisitos inst
 # Configuração e Instalação
 ## 1. Clone o Repositório
 
-*git clone https://github.com/seu-usuario/agendador-de-sala.git*
+*git clone https://github.com/IgorAugussto/Agendador_de_Salas.git*
 *cd agendador-de-sala*
 
 ## 2. Configure o Docker
