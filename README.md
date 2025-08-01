@@ -82,24 +82,29 @@ Antes de rodar o projeto, verifique se você possui os seguintes requisitos inst
 
 # Uso
 ## Endpoints Disponíveis
- - Cadastrar Sala: POST /salas (JSON com id, nome, capacidade, etc.)
- - Fazer Reserva: POST /reservas (JSON com start_time, end_time, user_name, room_id)
- - Ver Salas Disponíveis: GET /salas/disponiveis
- - Cadastrar Visitante: POST /visitantes (JSON com id, nome, idade, phone)
+ - Cadastrar Sala: POST /api/roms (JSON com id, nome, capacidade, etc.)
+ - Fazer Reserva: POST /api/bookings (JSON com start_time, end_time, user_name, room_id)
+ - Ver Salas Disponíveis: GET /api/rooms/available
+ - Cadastrar Visitante: POST /api/visitor (JSON com id, nome, idade, phone)
 # Testando com Postman
 O Postman pode ser usado para testar os endpoints da API. Siga os passos abaixo:
 
 **1. Abra o Postman.**
 **2. Configure a Requisição:**
  - Método: Escolha POST ou GET conforme o endpoint.
- - URL: Insira a URL, ex.: http://localhost:8080/salas.
+ - URL: Insira a URL, ex.: http://localhost:8080/api/rooms.
  - Headers: Adicione Content-Type: application/json.
  - Body: Para requisições POST, use o formato JSON, ex.:
 
 {
-  "id": 1,
-  "nome": "Sala 101",
-  "capacidade": 10
+    "name": "Sala de Reunião 1",
+    "capacity": 40,
+    "availableDays": [
+        "SUNDAY",
+        "FRIDAY"
+    ],
+    "openTime": "07:00",
+    "closeTime": "12:00"
 }
 
 **3. Envie a Requisição: Clique em "Send" e verifique a resposta.**
